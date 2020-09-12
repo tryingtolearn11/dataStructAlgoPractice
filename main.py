@@ -1,7 +1,6 @@
-
-class BinaryTreeNode:
+class BinaryTreeNode():
   def __init__(self, data = None, left = None, right = None):
-    self.data = None
+    self.data = data
     self.left = left
     self.right = right
 
@@ -28,38 +27,40 @@ class BinaryTreeNode:
 
 
 
-
-
-
 def main():
   # Root
   n1 = BinaryTreeNode(1)
-  # left child
+
   n2 = BinaryTreeNode(2)
-  # right child 
   n3 = BinaryTreeNode(3)
-  n1.left = n2
-  n1.right = n3
-
-  n1.data = 20
-  n2.data = 5
-  n3.data = 15
-
   n4 = BinaryTreeNode(4)
   n5 = BinaryTreeNode(5)
   n6 = BinaryTreeNode(6)
   n7 = BinaryTreeNode(7)
+  n8 = BinaryTreeNode(8)
+  n9 = BinaryTreeNode(9)
+  n10 = BinaryTreeNode(10)
 
+  n1.left = n2
+  n1.right = n3
+  n1.data = 20
+  n2.data = 5
+  n3.data = 15
   n4.data = 10
   n5.data = 12
   n6.data = 14
   n7.data = 18
-
+  n8.data = 30
+  n9.data = 7
+  n10.data = 3
 
   n2.left = n4
   n2.right = n5
   n3.left = n6
   n3.right = n7
+  n4.left = n8
+  n4.right = n9
+  n5.left = n10
 
   print("Inorder Traversal : " , "\n")   
   n1.print_inorder_traversal(n1)
