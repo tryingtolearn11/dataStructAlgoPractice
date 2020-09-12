@@ -26,6 +26,18 @@ class BinaryTreeNode():
       print(node.data)
 
 
+# Binary Tree
+#
+#            20  
+#          /     \
+#         5        15
+#       /   \     /  \
+#     10    12   14  18 
+#    / \    /
+#   30  7   3
+
+
+
 
 def main():
   # Root
@@ -41,8 +53,7 @@ def main():
   n9 = BinaryTreeNode(9)
   n10 = BinaryTreeNode(10)
 
-  n1.left = n2
-  n1.right = n3
+ 
   n1.data = 20
   n2.data = 5
   n3.data = 15
@@ -54,6 +65,9 @@ def main():
   n9.data = 7
   n10.data = 3
 
+
+  n1.left = n2
+  n1.right = n3
   n2.left = n4
   n2.right = n5
   n3.left = n6
