@@ -26,7 +26,7 @@ class BinaryTreeNode():
       print(node.data)
 
 
-# Binary Tree
+# Binary Tree : 
 #
 #            20  
 #          /     \
