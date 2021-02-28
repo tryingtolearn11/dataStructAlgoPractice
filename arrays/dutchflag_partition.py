@@ -49,4 +49,41 @@ def dutch_flag_opt1(pivot_index: int, A: List[int]) -> List[int]:
 
     return A
 
-print(dutch_flag_opt1(2, A=[5, 6, 3, 1, 4]))
+#print(dutch_flag_opt1(2, A=[5, 6, 3, 1, 4]))
+
+
+
+
+
+
+
+def dutch_flag_optimized(pivot_index: int, A: List[int]) -> List[int]:
+    pivot = A[pivot_index]
+    smaller, equal, larger = 0, 0, len(A)
+
+    # Classify elements in one pass
+    while equal < larger:
+        if A[equal] < pivot:
+            A[equal], A[smaller] = A[equal], A[smaller]
+            equal, smaller = equal + 1, smaller + 1
+        elif A[equal] == pivot:
+            equal+=1
+        else: # A[equal] > larger
+            larger-=1
+            A[equal], A[larger] = A[larger], A[equal]
+    return A
+
+
+
+print(dutch_flag_optimized(4, A = [3, 1, 0, 1, 2, 3, 5, 4, 1]))
+
+
+
+
+
+
+
+
+
+
+
