@@ -10,7 +10,7 @@ A = [3, 1, 2, 2, 1, 3, 2, 3]
 
 
 # Brute Force
-# O(n) time 
+# O(n) time complexity and space complexity? O(?) -> O(1) 
 def invariantOne(A: List[int]) -> List[int]:
     i = 0
     for j in range(i+1, len(A)):
