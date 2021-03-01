@@ -9,8 +9,12 @@ A = [3, 1, 2, 2, 1, 3, 2, 3]
 # Constraints O(1) additional space and O(n) time
 
 
-# Brute Force
+# Brute Force: Create three lists for each respective key and then write these
+#              values back into A.
+
+# Optimized:
 # O(n) time complexity and space complexity? O(?) -> O(1) 
+# Solved in 2 passes. BONUS: Can we solve in one pass and keep O(n) time?
 def invariantOne(A: List[int]) -> List[int]:
     i = 0
     for j in range(i+1, len(A)):
@@ -35,4 +39,8 @@ def invariantOne(A: List[int]) -> List[int]:
 
 
 
-print(invariantOne(A))
+# print(invariantOne(A))
+
+
+
+
