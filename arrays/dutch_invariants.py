@@ -3,6 +3,17 @@ from typing import List
 
 A = [3, 1, 2, 2, 1, 3, 2, 3]
 
+
+
+
+
+# TODO: Return to complete the rest of 5.1 invariants
+
+
+
+
+
+
 # Invariant One
 # Reorder the array so that all objects with the same key appear together.
 # Order does not matter. 
@@ -59,3 +70,6 @@ def invariant_three(B: List[bool]) -> List[bool]:
 
 print(invariant_three(B=[1, 0, 1, 0, 0, 1]))
 print(invariant_three(B=[1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1]))
+
+
+
