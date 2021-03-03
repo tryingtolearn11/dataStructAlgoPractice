@@ -1,9 +1,12 @@
 from typing import List
+import random
 
 # TODO: Write Test Cases
 
 A = [1, 2, 2, 1, 3, 1, 3, 3, 4, 1, 1, 1, 3]
 
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 
 
 def variant(A: List[int]) -> int:
@@ -21,5 +24,12 @@ def variant(A: List[int]) -> int:
 
 
 
+def input():
+    for i in range(20):    
+        x = [random.randint(1,3) for x in range(1, random.randrange(1,20))]
+        print(x)
+        print(variant(x))
 
-print(variant(A))
+
+     
+input()
